@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Corner Store</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="helpString">
+        - When you first open this app you saw buttons for Shopping Cart, Add New, Saved Recipes, and New Recipes. These are all initially empty \n
+        - To begin you start by pressing the Add New button and type an ingredient into the search field and hit search. \n
+        - For any element you wish to add click the buttons on the right side of the town elements that say Shopping, or Fridge to add that ingredient to your shopping cart or fridge respectively. \n
+        - An animation of a fridge or shopping cart will play to show that the operation started and finished. \n
+        - Go back to the home page and see that any ingredient you added to the fridge are now there. \n
+        - Then click on the shopping cart button to see elements you added to your cart. \n
+        - From here you can add these ingredient to your fridge or delete them from your cart. \n
+        - Go back and see that ingredients you added to your fridge are now there. \n
+        - You can delete elements in your fridge at any time. \n
+        - Open the recipe button to search for recipes that are based on the contents of your fridge.  \n
+        - For the recipes that come up in the search you can do any of the three things, Open the webpage in a browser, save the recipes to your saved recipes, or click on the image to save it to your phones photo gallery. \n
+        - Go back and open saved recipes and you can do any of the three things, Open the webpage in a browser, delete the recipe from your saved recipes, or click on the image to save it to your phones photo gallery. \n
+        - Use these different functions as you get new ingredients and use them to always have new recipes to make \n
+    </string>
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Author: Isaac Harper  -->
+<!-- layout for row in saved listview -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#ffdcd3ff">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/savedImage"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/savedItem"
+        android:textSize="25dp"
+        android:layout_weight="1"
+        android:textColor="#ff323232"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/savedDelete"
+        android:text="Delete"
+        android:textColor="#ff323232"
+        android:background="#FFffb3ba"
+        android:layout_margin="0dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/savedOpen"
+        android:text="open"
+        android:textColor="#ff323232"
+        android:background="#ffbaffc9"
+        android:layout_margin="0dp"/>
+    </LinearLayout>
+
+</LinearLayout>

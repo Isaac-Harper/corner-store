@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Author: Isaac Harper  -->
+<!-- navigation portal -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment"
+    android:background="#FFf6f6eb">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/shoppingAddLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".6"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/recipeSaveLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".4"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/buttonLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/centerLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".5"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/recipeButtonLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".85"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/textLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".25"/>
+
+
+    <Button
+        android:id="@+id/shoppingButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Shopping list"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/buttonLine"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/shoppingAddLine"
+        android:layout_margin="0dp"
+        android:onClick="shoppingCart"
+        android:background="#FFffb3ba"
+        android:textColor="#ff323232"
+        android:textSize="25sp"
+        />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Add New Item"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/buttonLine"
+        app:layout_constraintLeft_toRightOf="@id/shoppingAddLine"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="0dp"
+        android:onClick="addNew"
+        android:background="#ffbae1ff"
+        android:textColor="#ff323232"
+        android:textSize="25sp"/>
+
+    <Button
+        android:id="@+id/recipeButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Find Recipes"
+        app:layout_constraintTop_toTopOf="@id/recipeButtonLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/shoppingAddLine"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="0dp"
+        android:background="#ffffdfba"
+        android:onClick="recipeSearch"
+        android:textColor="#ff323232"
+        android:textSize="25sp"/>
+
+    <Button
+        android:id="@+id/helpButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Help"
+        app:layout_constraintTop_toTopOf="@id/recipeButtonLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/recipeSaveLine"
+        app:layout_constraintRight_toLeftOf="@id/shoppingAddLine"
+        android:layout_margin="0dp"
+        android:background="#ffdcd3ff"
+        android:onClick="helpUser"
+        android:textColor="#ff323232"
+        android:textSize="25sp"/>
+
+    <Button
+        android:id="@+id/savedButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Saved Recipes"
+        app:layout_constraintTop_toTopOf="@id/recipeButtonLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/recipeSaveLine"
+        android:layout_margin="0dp"
+        android:onClick="savedRecipes"
+        android:background="#ffbaffc9"
+        android:textColor="#ff323232"
+        android:textSize="25sp"/>
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Fridge"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="#ff323232"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLine"
+        app:layout_constraintBottom_toTopOf="@id/textLine"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+    <ListView
+        android:id="@+id/fridgeList"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textLine"
+        app:layout_constraintBottom_toTopOf="@id/recipeButtonLine"
+        android:layout_marginHorizontal="5dp"
+        android:scrollbars="none"
+        android:overScrollMode="never"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
